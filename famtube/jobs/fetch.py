@@ -31,7 +31,8 @@ class YoutubeSearchFetch:
         if response.status_code != 200:
             # log error response
             logger.error("YouTube fetch returned invalid response {}".format(response.text))
-            
-        # process
-        YoutubeFetchService.process_response(response.json())
+        
+        else:
+            # process
+            YoutubeFetchService.process_response(response.json())
 
