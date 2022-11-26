@@ -13,7 +13,8 @@ API fetches latest videos sorted in reverse chronological order of their publish
 - Fetches Youtube data asynchornously and stores data to sql databse
 - Get api `/get_videos` to fetch paginated reults.
 - Post api `/get_videos/search` to search results for query.
-- Retry mechanism in case of esceptions or quota completion.
+- Retry mechanism in case of esceptions or quota completion
+- Search query, fetch times etc are customizable in settings
 
 
 
