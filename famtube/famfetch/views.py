@@ -56,7 +56,6 @@ class VideoDataViewSet(viewsets.ViewSet):
             page = pagination.paginate_queryset(queryset, request)
             data = VideosSerializer(page, many=True).data
             return pagination.get_paginated_response(data)
-            return JsonResponse({}, 200)
         except Exception as e:
             return JsonResponse(
                 {
